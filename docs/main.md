@@ -5,7 +5,7 @@ local function Initialize()
     print("ZenUI is guaranteed to be initialized here :D")
 end
 
-if !table.HasValue(_G, "ZenUI") or !ZenUI.Loaded then
+if !_G.ZenUI or !ZenUI.Loaded then
     hook.Add("ZenUI_Loaded", "YourAddon_ZenUI_Loaded", Initialize)
 else
     Initialize()
