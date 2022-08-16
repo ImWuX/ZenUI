@@ -17,6 +17,7 @@ end
 
 - [Panel](./components/panel.md)
 - [Window](./components/window.md)
+- [Sidebar](./components/sidebar.md)
 - [Label](./components/label.md)
 - [Button](./components/button.md)
 - [TextEntry](./components/textentry.md)
