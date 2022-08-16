@@ -41,7 +41,7 @@ function TEXTENTRY:GetValue()
 end
 
 function TEXTENTRY:SetPlaceholderText(text)
-    self.Entry:SetPlaceholderText()
+    self.Entry:SetPlaceholderText(text)
 end
 
 function TEXTENTRY:GetPlaceholderText()
