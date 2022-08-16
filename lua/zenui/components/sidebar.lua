@@ -75,6 +75,7 @@ function SIDEBAR:SetSelectedButton(button)
 
     self.SelectedButton = button
     if self.Target then
+        self.Target:Clear()
         local e = self.Target:Add(self.Buttons[button].Element)
         e:StretchToParent(0, 0, 0, 0)
     end
