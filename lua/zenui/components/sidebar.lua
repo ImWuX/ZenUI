@@ -51,7 +51,7 @@ function SIDEBAR:AddButton(title, description, element)
         surface.SetFont("ZenUI.Sidebar.ButtonTitle")
         local titleW, titleH = surface.GetTextSize(title)
 
-        surface.SetFont("ZenUI.Sidebar.ButtonDesc")
+        surface.SetFont("ZenUI.Sidebar.ButtonDescription")
         local descW, descH = surface.GetTextSize(description)        
 
         surface.SetFont("ZenUI.Sidebar.ButtonTitle")
@@ -59,7 +59,7 @@ function SIDEBAR:AddButton(title, description, element)
         surface.SetTextPos(10, h/2 - titleH/2 - descH/2)
         surface.DrawText(title)
 
-        surface.SetFont("ZenUI.Sidebar.ButtonDesc")
+        surface.SetFont("ZenUI.Sidebar.ButtonDescription")
         surface.SetTextColor(self.DescriptionColor)
         surface.SetTextPos(10, h/2 - descH/2 + titleH/2)
         surface.DrawText(description)
