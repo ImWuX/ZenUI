@@ -131,7 +131,7 @@ function DROPDOWN:SetValue(value)
     end
 
     if found then
-        self.Value = found
+        self.Value = value
         self:SetText(label)
     else
         error("Tried setting dropdown to an invalid value")
