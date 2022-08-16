@@ -29,6 +29,11 @@ end
 
 function SIDEBAR:SetTarget(target)
     self.Target = target
+    self.Target.PerformLayout = function(self, w, h)
+        for _, v in pairs(self:GetChildren()) do
+            v:StretchToParent(0, 0, 0, 0)
+        end
+    end
     self:SetSelectedButton(self.SelectedButton)
 end
 
