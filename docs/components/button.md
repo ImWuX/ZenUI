@@ -5,8 +5,14 @@ Derives from [DButton](https://wiki.facepunch.com/gmod/DButton).
 `void Button:SetColor( Color color )`  
 Sets the background color of the button.
 
+`void Button:SetAccentColor( Color color )`  
+Sets the accent color of the button.
+
 `Color Button:GetColor()`  
 Returns the background color of the button.
+
+`Color Button:GetAccentColor()`  
+Returns the accent color of the button.
 
 `void Button:SetFontSize( number size )`  
 Sets the font size of the button.
