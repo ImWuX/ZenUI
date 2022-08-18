@@ -22,7 +22,7 @@ function ZenUI.Utils.Lighten(color, amount)
 end
 
 function ZenUI.Utils.Differ(color, amount)
-    if color.r < 25 and color.g < 25 and color.b < 25 then
+    if color.r < 100 and color.g < 100 and color.b < 100 then
         return ZenUI.Utils.Lighten(color, amount)
     else
         return ZenUI.Utils.Darken(color, amount)
