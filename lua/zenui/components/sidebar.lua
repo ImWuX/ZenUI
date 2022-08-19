@@ -19,7 +19,7 @@ function SIDEBAR:Init()
 end
 
 function SIDEBAR:Paint(w, h)
-    self.ActivePosition = Lerp(0.02, self.ActivePosition or 0, (self.SelectedButton - 1) * 55)            
+    self.ActivePosition = Lerp(0.04, self.ActivePosition or 0, (self.SelectedButton - 1) * 55)            
     draw.RoundedBoxEx(4, 0, 0, w, h, self.Color, false, false, true, false)
     surface.SetDrawColor(255, 255, 255, 10)
     surface.DrawRect(0, self.ActivePosition, w, 55)
