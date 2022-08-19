@@ -13,4 +13,8 @@ ZenUI.Themes["Dark"] = {
     Accent = Color(147, 36, 252)
 }
 
-ZenUI.Colors = ZenUI.Themes["Dark"]
+ZenUI.SetTheme = function(theme)
+    ZenUI.Colors = ZenUI.Themes[theme]
+end
+
+ZenUI.SetTheme("Dark")
