@@ -25,4 +25,5 @@ end
 - [Avatar](./components/avatar.md)
 - [Dropdown](./components/dropdown.md)
 - [Slider](./components/slider.md)
+- [Switch](./components/switch.md)
 - [Scroll](./components/scroll.md)

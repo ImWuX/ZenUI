@@ -48,3 +48,36 @@ function ZenUI.Utils.CalculateCircle(x, y, w, h, vertices)
     table.insert(poly, { x = x + math.sin(a) * radius, y = y + math.cos(a) * radius })
     return poly
 end
+
+/*
+    Credits to TDLib for the DrawCircle & DrawArc 
+*/
+ZenUI.Utils.DrawCircle = function(x, y, radius, color)
+    local circle = {}
+
+    for i = 1, 360 do
+        circle[i] = {}
+        circle[i].x = x + math.cos(math.rad(i * 360) / 360) * radius
+        circle[i].y = y + math.sin(math.rad(i * 360) / 360) * radius
+    end
+
+    surface.SetDrawColor(color)
+    draw.NoTexture()
+    surface.DrawPoly(circle)
+end
+
+ZenUI.Utils.DrawArc = function(x, y, ang, p, rad, color, seg)
+    seg = seg || 80
+    ang = (-ang) + 180
+    local circle = {}
+
+    table.insert(circle, {x = x, y = y})
+    for i = 0, seg do
+        local a = math.rad((i / seg) * -p + ang)
+        table.insert(circle, {x = x + math.sin(a) * rad, y = y + math.cos(a) * rad})
+    end
+
+    surface.SetDrawColor(color)
+    draw.NoTexture()
+    surface.DrawPoly(circle)
+end
