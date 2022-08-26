@@ -29,6 +29,7 @@ function ZenUI.Initialize()
 
 	-- Load Fonts
 	resource.AddFile("resource/fonts/montserrat-medium.ttf")
+    resource.AddFile("materials/zenui/lock.png")
 
     ZenUI.IncludeDir("libs")
     ZenUI.Include("utils")

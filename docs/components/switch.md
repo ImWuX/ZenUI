@@ -9,6 +9,12 @@ Sets the value of the switch.
 `boolean SWITCH:GetValue()`  
 Returns the value of the switch.
 
+`void SWITCH:SetLocked( boolean value )`  
+Sets the locked state of the switch.
+
+`boolean SWITCH:GetLocked()`  
+Returns the locked state of the switch.
+
 `void SWITCH:SetOnColor( Color color )`  
 Sets the color of the switch when turned on.
 
@@ -22,7 +28,7 @@ Sets the color of the switch when turned off.
 Returns the color of the switch when turned off.
 
 # Events
-`void SWITCH:OnValueChanged( boolean value )`  
+`void SWITCH:OnValueChange( boolean value )`  
 This method is called whenever the state of the switch changes.
 
 # Example
